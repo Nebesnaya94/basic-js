@@ -26,7 +26,7 @@ function getSeason(date) {
     } else if (month === 0 || month === 1 || month === 11) {
       return "winter";
     } else {
-      return "Invalid date!";
+      throw new Error("Invalid date!");
     }
   }
   return "Unable to determine the time of year!";
