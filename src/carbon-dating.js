@@ -22,8 +22,6 @@ function dateSample(sampleActivity) {
   // remove line with error and write your code here
   if (typeof sampleActivity == "string") {
     if (+sampleActivity > 0) {
-      // let k = MODERN_ACTIVITY / +sampleActivity / HALF_LIFE_PERIOD;
-      // let t = Math.log(MODERN_ACTIVITY / +sampleActivity) / k;
       let t =
         (Math.log(MODERN_ACTIVITY / +sampleActivity) / Math.log(2)) *
         HALF_LIFE_PERIOD;
